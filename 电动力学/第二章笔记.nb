@@ -1,0 +1,215 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7517,        207]
+NotebookOptionsPosition[      6602,        181]
+NotebookOutlinePosition[      6990,        198]
+CellTagsIndexPosition[      6947,        195]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Phi]", "[", 
+   RowBox[{"x_", ",", "y_", ",", "q_"}], "]"}], ":=", 
+  RowBox[{
+   FractionBox["1", 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"x", "-", "1"}], ")"}], "2"], "+", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"y", "-", "0"}], ")"}], "2"]}]]], "-", 
+   FractionBox["q", 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"x", "-", "0"}], ")"}], "2"], "+", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"y", "-", "0"}], ")"}], "2"]}]]]}]}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"DensityPlot", "[", 
+    RowBox[{
+     RowBox[{"\[Phi]", "[", 
+      RowBox[{"x", ",", "y", ",", "q"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"q", ",", "0", ",", "3"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.858843028643879*^9, 3.8588430365412116`*^9}, {
+   3.858843096965595*^9, 3.8588431294885387`*^9}, {3.858843177179676*^9, 
+   3.8588431842178593`*^9}, 3.8588432764697504`*^9},
+ CellLabel->"In[19]:=",ExpressionUUID->"193aa56f-cc09-4e28-9779-ab1643efc768"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`q$$ = 2.935, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"\:65e0\:6807\:9898\"", Typeset`specs$$ = {{
+      Hold[$CellContext`q$$], 0, 3}}, Typeset`size$$ = {524., {228., 234.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`q$127726$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`q$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`q$$, $CellContext`q$127726$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> DensityPlot[
+        $CellContext`\[Phi][$CellContext`x, $CellContext`y, \
+$CellContext`q$$], {$CellContext`x, -2, 2}, {$CellContext`y, -2, 2}, 
+        PlotLegends -> Automatic], 
+      "Specifications" :> {{$CellContext`q$$, 0, 3}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{585., {282., 289.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.858843039900318*^9, 3.8588431000889907`*^9, 
+  3.858843143548396*^9, 3.8588432775521655`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"54fabd21-515e-4159-80ef-34f5aa6b3e82"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FromSphericalCoordinates", "[", 
+  RowBox[{"{", 
+   RowBox[{"r", ",", "\[Theta]", ",", "\[CurlyPhi]"}], "}"}], "]"}]], "Input",
+ CellLabel->"In[27]:=",ExpressionUUID->"767f2285-1f5d-4816-816d-e4324313946a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"r", " ", 
+    RowBox[{"Cos", "[", "\[CurlyPhi]", "]"}], " ", 
+    RowBox[{"Sin", "[", "\[Theta]", "]"}]}], ",", 
+   RowBox[{"r", " ", 
+    RowBox[{"Sin", "[", "\[Theta]", "]"}], " ", 
+    RowBox[{"Sin", "[", "\[CurlyPhi]", "]"}]}], ",", 
+   RowBox[{"r", " ", 
+    RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.859117025458805*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"5f9843a8-a343-421d-8d4c-6cd54f9f72b7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"p", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"r1", " ", 
+      RowBox[{"Cos", "[", "\[CurlyPhi]1", "]"}], " ", 
+      RowBox[{"Sin", "[", "\[Theta]1", "]"}]}], ",", 
+     RowBox[{"r1", " ", 
+      RowBox[{"Sin", "[", "\[Theta]1", "]"}], " ", 
+      RowBox[{"Sin", "[", "\[CurlyPhi]1", "]"}]}], ",", 
+     RowBox[{"r1", " ", 
+      RowBox[{"Cos", "[", "\[Theta]1", "]"}]}]}], "}"}]}], ";", 
+  RowBox[{"q", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"r2", " ", 
+      RowBox[{"Cos", "[", "\[CurlyPhi]2", "]"}], " ", 
+      RowBox[{"Sin", "[", "\[Theta]2", "]"}]}], ",", 
+     RowBox[{"r2", " ", 
+      RowBox[{"Sin", "[", "\[Theta]2", "]"}], " ", 
+      RowBox[{"Sin", "[", "\[CurlyPhi]2", "]"}]}], ",", 
+     RowBox[{"r2", " ", 
+      RowBox[{"Cos", "[", "\[Theta]2", "]"}]}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{"p", ".", "q"}], "/", 
+   RowBox[{"(", 
+    RowBox[{"r1", "*", "r2"}], ")"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8591165645113525`*^9, 3.8591165877716265`*^9}, {
+  3.8591167829948087`*^9, 3.85911683546609*^9}, {3.859116959511788*^9, 
+  3.8591169931697645`*^9}, {3.8591170670057774`*^9, 3.8591171069347005`*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"fc5f5f21-1c76-4e2d-9e06-9586c17bee87"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Cos", "[", "\[Theta]1", "]"}], " ", 
+   RowBox[{"Cos", "[", "\[Theta]2", "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"Cos", "[", 
+    RowBox[{"\[CurlyPhi]1", "-", "\[CurlyPhi]2"}], "]"}], " ", 
+   RowBox[{"Sin", "[", "\[Theta]1", "]"}], " ", 
+   RowBox[{"Sin", "[", "\[Theta]2", "]"}]}]}]], "Output",
+ CellChangeTimes->{{3.859116578329132*^9, 3.8591165900381937`*^9}, 
+   3.8591168369471893`*^9, 3.859116999436722*^9, {3.859117096062703*^9, 
+   3.859117108985715*^9}},
+ CellLabel->"Out[31]=",ExpressionUUID->"3de6d6af-da59-4430-8e03-542433ce4cd0"]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 460}, {-8, Automatic}},
+Magnification:>1.25 Inherited,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (2019\:5e745\:670818\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1409, 41, 159, "Input",ExpressionUUID->"193aa56f-cc09-4e28-9779-ab1643efc768"],
+Cell[1992, 65, 1873, 37, 594, "Output",ExpressionUUID->"54fabd21-515e-4159-80ef-34f5aa6b3e82"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3902, 107, 230, 4, 55, "Input",ExpressionUUID->"767f2285-1f5d-4816-816d-e4324313946a"],
+Cell[4135, 113, 497, 12, 40, "Output",ExpressionUUID->"5f9843a8-a343-421d-8d4c-6cd54f9f72b7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4669, 130, 1327, 33, 145, "Input",ExpressionUUID->"fc5f5f21-1c76-4e2d-9e06-9586c17bee87"],
+Cell[5999, 165, 587, 13, 72, "Output",ExpressionUUID->"3de6d6af-da59-4430-8e03-542433ce4cd0"]
+}, Open  ]]
+}
+]
+*)
+

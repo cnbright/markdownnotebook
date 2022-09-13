@@ -1,0 +1,918 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     40428,        910]
+NotebookOptionsPosition[     37975,        857]
+NotebookOutlinePosition[     38330,        873]
+CellTagsIndexPosition[     38287,        870]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["x", "n"], "+", 
+   RowBox[{"5", "*", 
+    SuperscriptBox["x", 
+     RowBox[{"n", "-", "1"}]]}]}], 
+  RowBox[{"x", "-", "5"}]]], "Input",
+ CellChangeTimes->{{3.8550852172207737`*^9, 3.855085230073305*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"702c15b1-7798-402e-962a-2782dd6fd415"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"5", " ", 
+    SuperscriptBox["x", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", "n"}]]}], "+", 
+   SuperscriptBox["x", "n"]}], 
+  RowBox[{
+   RowBox[{"-", "5"}], "+", "x"}]]], "Output",
+ CellChangeTimes->{3.855085230812575*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"e6350e30-67f4-4a64-838c-14b3998a854c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      RowBox[{"5", " ", 
+       SuperscriptBox["x", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "n"}]]}], "+", 
+      SuperscriptBox["x", "n"]}], 
+     RowBox[{"5", "+", "x"}]], "/.", " ", 
+    RowBox[{"n", "\[Rule]", " ", "16"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1"}], "}"}], ",", "All"}], "}"}]}], ",", 
+   RowBox[{"PlotPoints", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.85508767683147*^9, 3.855087707548295*^9}, {
+  3.8550877410388556`*^9, 3.855087742186387*^9}, {3.855088276769161*^9, 
+  3.855088308667576*^9}, {3.8550883825748863`*^9, 3.8550884056776056`*^9}, {
+  3.8550884398215485`*^9, 3.85508844326219*^9}},
+ CellLabel->"In[62]:=",ExpressionUUID->"c80df450-4923-453d-b5b5-c3b1d7bdcea2"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1: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
+       "]]},
+     Annotation[#, "Charting`Private`Tag$130432#1"]& ]}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, Automatic},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}, {Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0, 1}, All},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{0, 0}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.8550876822008195`*^9, 3.855087708433466*^9}, 
+   3.85508774264537*^9, {3.855088277353883*^9, 3.855088314092167*^9}, {
+   3.8550883829754095`*^9, 3.8550884060842485`*^9}, {3.8550884403458786`*^9, 
+   3.8550884436347504`*^9}},
+ CellLabel->"Out[62]=",ExpressionUUID->"978408b7-568f-4225-b0ce-8050ee23ba9c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"iarray", " ", "=", " ", 
+   RowBox[{"ConstantArray", "[", 
+    RowBox[{"0", ",", "11"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"iarray", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], " ", "=", " ", "0.182321559"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"errorarray", " ", "=", " ", 
+   RowBox[{"ConstantArray", "[", 
+    RowBox[{"0", ",", "11"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"n", "=", "1"}], ",", 
+    RowBox[{"n", "\[LessEqual]", "10"}], ",", 
+    RowBox[{"n", "+=", "1"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"t", "=", " ", 
+      RowBox[{"n", "+", "1"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"iarray", "[", 
+       RowBox[{"[", "t", "]"}], "]"}], "=", 
+      RowBox[{
+       SuperscriptBox["n", 
+        RowBox[{"-", "1"}]], "-", 
+       RowBox[{"5", "*", 
+        RowBox[{"iarray", "[", 
+         RowBox[{"[", 
+          RowBox[{"t", "-", "1"}], "]"}], "]"}]}]}]}], ";", " ", 
+     "\[IndentingNewLine]", 
+     RowBox[{"temp", " ", "=", " ", 
+      RowBox[{"N", "[", 
+       RowBox[{"Integrate", "[", 
+        RowBox[{
+         FractionBox[
+          SuperscriptBox["x", "n"], 
+          RowBox[{"x", "+", "5"}]], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"errorarray", "[", 
+       RowBox[{"[", "t", "]"}], "]"}], "=", 
+      FractionBox[
+       RowBox[{"Abs", "[", " ", 
+        RowBox[{"temp", "-", 
+         RowBox[{"iarray", "[", 
+          RowBox[{"[", "t", "]"}], "]"}]}], "]"}], "temp"]}]}]}], 
+   "\[IndentingNewLine]", "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"iarray", " ", "=", " ", 
+   RowBox[{"ConstantArray", "[", 
+    RowBox[{"0", ",", "11"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"iarray", "[", 
+    RowBox[{"[", "11", "]"}], "]"}], " ", "=", " ", "0.015367548912763596`"}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"errorarray2", " ", "=", " ", 
+   RowBox[{"ConstantArray", "[", 
+    RowBox[{"0", ",", "11"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"n", "=", "10"}], ",", 
+   RowBox[{"n", "\[GreaterEqual]", "0"}], ",", 
+   RowBox[{"n", "-=", "1"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"t", "=", " ", 
+     RowBox[{"n", "+", "1"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"iarray", "[", 
+      RowBox[{"[", 
+       RowBox[{"t", "-", "1"}], "]"}], "]"}], "=", 
+     RowBox[{
+      FractionBox["1", "5"], "*", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["n", 
+         RowBox[{"-", "1"}]], "-", 
+        RowBox[{"iarray", "[", 
+         RowBox[{"[", "t", "]"}], "]"}]}], ")"}]}]}], ";", " ", 
+    "\[IndentingNewLine]", 
+    RowBox[{"temp", " ", "=", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{"Integrate", "[", 
+       RowBox[{
+        FractionBox[
+         SuperscriptBox["x", "n"], 
+         RowBox[{"x", "+", "5"}]], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"errorarray2", "[", 
+      RowBox[{"[", 
+       RowBox[{"t", "-", "1"}], "]"}], "]"}], "=", 
+     FractionBox[
+      RowBox[{"Abs", "[", " ", 
+       RowBox[{"temp", "-", 
+        RowBox[{"iarray", "[", 
+         RowBox[{"[", 
+          RowBox[{"t", "-", "1"}], "]"}], "]"}]}], "]"}], "temp"]}]}]}], 
+  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.855087885119503*^9, 3.8550879716581545`*^9}, {
+   3.8550880258434677`*^9, 3.855088102042534*^9}, {3.855088147435526*^9, 
+   3.8550882605000515`*^9}, {3.8550885610350685`*^9, 3.855088719819132*^9}, {
+   3.855088882069785*^9, 3.8550888882385826`*^9}, {3.855088918738454*^9, 
+   3.8550889747413397`*^9}, {3.855090670302641*^9, 3.8550906811635437`*^9}, {
+   3.8550907474506464`*^9, 3.8550907479506598`*^9}, {3.855090874459161*^9, 
+   3.8550908933838663`*^9}, {3.8550910057191763`*^9, 3.855091039532523*^9}, 
+   3.8550918660512877`*^9, {3.8550953578354893`*^9, 3.855095405332806*^9}, {
+   3.855097514943593*^9, 3.8550975733944216`*^9}, {3.855097638751646*^9, 
+   3.855097653991666*^9}, {3.8550978693790855`*^9, 3.8550979143144565`*^9}, {
+   3.870658196961627*^9, 3.87065842407032*^9}, {3.8706584789277325`*^9, 
+   3.8706585240552597`*^9}, {3.8706585975395164`*^9, 3.870658644715317*^9}, {
+   3.8706587377067432`*^9, 3.870658766911564*^9}, {3.870659485854875*^9, 
+   3.8706595096953135`*^9}, {3.870659591841648*^9, 3.870659617030243*^9}, {
+   3.870659795895995*^9, 3.870659921256312*^9}},
+ CellLabel->
+  "In[116]:=",ExpressionUUID->"f6cb5eeb-f940-4f94-9a81-1cd87c3354b9"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"\:78b0\:5230\:65e0\:7a77\:8868\:8fbe\:5f0f \\!\\(\\*FractionBox[\\\"1\\\
+\", \\\"0\\\"]\\).\"",2,124,6,18408792647843753349,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8706599252454524`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[116]:=",ExpressionUUID->"37bf14be-c722-4608-\
+84d4-aaa0c0094b23"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{"ListPlot", "[", 
+    RowBox[{"errorarray", ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", " ", "Red"}]}], "]"}], 
+   "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.870658432691037*^9, 3.8706584437862067`*^9}, 
+   3.8706585407386627`*^9, {3.8706590714073873`*^9, 3.8706590787655935`*^9}, {
+   3.8706591405957146`*^9, 3.8706591455670753`*^9}, {3.8706593896502934`*^9, 
+   3.8706594087066455`*^9}, {3.870659542410232*^9, 3.8706595639663763`*^9}, {
+   3.870659629705387*^9, 3.870659666691796*^9}, {3.870659758116971*^9, 
+   3.8706597891149387`*^9}},
+ CellLabel->
+  "In[114]:=",ExpressionUUID->"2bc6fc58-dfe0-4680-bb09-b8362d277960"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {
+    {RGBColor[1, 0, 0], PointSize[0.012833333333333334`], AbsoluteThickness[
+     1.6], PointBox[{{1., 0.}, {2., 1.2478731479397495`*^-7}, {3., 
+      9.502439268347167*^-7}, {4., 6.3922988251449215`*^-6}, {5., 
+      0.00004019020354673583}, {6., 0.00024215980935985028`}, {7., 
+      0.0014170438574416238`}, {8., 0.00811710231174246}, {9., 
+      0.04574719735620597}, {10., 0.25455261479960545`}, {11., 
+      1.4018770013132997`}}]}, {
+     {RGBColor[1, 0, 0], PointSize[0.012833333333333334`], AbsoluteThickness[
+      1.6]}, {}}, {
+     {RGBColor[1, 0, 0], PointSize[0.012833333333333334`], AbsoluteThickness[
+      1.6]}, {}}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0.7916666666666667, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImageSize->{646., Automatic},
+  Method->{
+   "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0.7916666666666667, 11.}, {0, 1.4018770013132997`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.8706584115857334`*^9, 3.8706584451259685`*^9}, {
+   3.870658535898706*^9, 3.8706585420908513`*^9}, 3.8706587724768543`*^9, {
+   3.8706590731149216`*^9, 3.870659079965932*^9}, {3.8706591412629404`*^9, 
+   3.870659146819746*^9}, {3.8706593907487946`*^9, 3.870659409115677*^9}, {
+   3.8706594973624945`*^9, 3.8706595170657682`*^9}, {3.8706595483055906`*^9, 
+   3.870659564412397*^9}, {3.8706595994994297`*^9, 3.870659653829077*^9}, {
+   3.87065976192705*^9, 3.8706597895452237`*^9}},
+ CellLabel->
+  "Out[114]=",ExpressionUUID->"c0ed931c-f3d3-49a9-9313-6d135cbf105c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"iarray", " ", "=", " ", 
+   RowBox[{"ConstantArray", "[", 
+    RowBox[{"0", ",", "21"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"iarray", "[", 
+    RowBox[{"[", "21", "]"}], "]"}], " ", "=", "0.03125`"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"errorarray2", " ", "=", " ", 
+   RowBox[{"ConstantArray", "[", 
+    RowBox[{"0", ",", "21"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"n", "=", "20"}], ",", 
+   RowBox[{"n", "\[GreaterEqual]", "7"}], ",", 
+   RowBox[{"n", "-=", "1"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"t", "=", " ", 
+     RowBox[{"n", "+", "1"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"iarray", "[", 
+      RowBox[{"[", 
+       RowBox[{"t", "-", "1"}], "]"}], "]"}], "=", 
+     RowBox[{
+      FractionBox["1", "5"], "*", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["n", 
+         RowBox[{"-", "1"}]], "-", 
+        RowBox[{"iarray", "[", 
+         RowBox[{"[", "t", "]"}], "]"}]}], ")"}]}]}], ";", " ", 
+    "\[IndentingNewLine]", 
+    RowBox[{"temp", " ", "=", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{"Integrate", "[", 
+       RowBox[{
+        FractionBox[
+         SuperscriptBox["x", "t"], 
+         RowBox[{"x", "+", "5"}]], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"errorarray2", "[", 
+      RowBox[{"[", 
+       RowBox[{"t", "-", "1"}], "]"}], "]"}], "=", 
+     FractionBox[
+      RowBox[{"Abs", "[", " ", 
+       RowBox[{"temp", "-", 
+        RowBox[{"iarray", "[", 
+         RowBox[{"[", 
+          RowBox[{"t", "-", "1"}], "]"}], "]"}]}], "]"}], "temp"]}]}]}], 
+  "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.8706599752860875`*^9, 3.8706599771447315`*^9}, {
+  3.870660142498042*^9, 3.870660186015006*^9}, {3.8706603376621675`*^9, 
+  3.8706603384558783`*^9}, {3.8706603738543997`*^9, 3.870660384516287*^9}},
+ CellLabel->
+  "In[163]:=",ExpressionUUID->"2aefbc77-b9d1-4d2b-9d52-e04050cfb84a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"\:78b0\:5230\:65e0\:7a77\:8868\:8fbe\:5f0f \\!\\(\\*FractionBox[\\\"1\\\
+\", \\\"0.`\\\"]\\).\"",2,166,15,18408792647843753349,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.870660340916966*^9, {3.870660374602198*^9, 3.870660385003586*^9}},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[163]:=",ExpressionUUID->"ad4a29bf-7ee2-4b47-\
+8c1f-97039750ab7c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Reverse", "[", "errorarray2", "]"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", " ", "Red"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.8706599442801123`*^9, {3.870659990903827*^9, 3.8706599955703897`*^9}},
+ CellLabel->
+  "In[149]:=",ExpressionUUID->"ee4dd2ce-3d00-450d-abf3-4402bda1a1c5"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {
+    {RGBColor[1, 0, 0], PointSize[0.012833333333333334`], AbsoluteThickness[
+     1.6], PointBox[CompressedData["
+1:eJxTTMoPSmViYGAQBWIQDQEf7BlQgYNmTP+hrxpvoOIcDl8Ov5qULXYByhdw
+eL5h4S/PH+uhfBGHtgss8enSm6B8CQf15p3GajvWQfkyDuFlid7nyzdC+QoO
+E++sXTK7EKZeyeFOm3XPvDeboXwVBz+/K7vLZ2yF8tUcrI6krv8+ZTuUr+Hw
+e71QkNmPnVC+lsML186eS0/2QPk6Dv4BKcwl7gegfD2HCvmst55LDkH5Bg6z
+002nzD97FMo3dEhQtdy42f4UlG/kIBL/5blOFcy/xg55Qedk+aWvQfkmDrlr
+vli77HkA5Zs6ZP5aPGsqw0d7AIzmXHk=
+      "]]}, {
+     {RGBColor[1, 0, 0], PointSize[0.012833333333333334`], AbsoluteThickness[
+      1.6]}, {}}, {
+     {RGBColor[1, 0, 0], PointSize[0.012833333333333334`], AbsoluteThickness[
+      1.6]}, {}}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0.5833333333333335, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0.5833333333333335, 21.}, {0, 1.0626426735540468`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.870659945325082*^9, {3.870659981358857*^9, 3.8706599960359087`*^9}, {
+   3.870660193720656*^9, 3.8706602231855373`*^9}},
+ CellLabel->
+  "Out[149]=",ExpressionUUID->"19406428-052a-4803-817b-3b141a4263c3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"N", "[", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["x", "20"], 
+      RowBox[{"x", "+", "5"}]], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.870660161035821*^9, 3.870660169956422*^9}},
+ CellLabel->
+  "In[139]:=",ExpressionUUID->"c1904669-8d85-4d9a-88ae-42a694ea4a88"],
+
+Cell[BoxData["0.03125`"], "Output",
+ CellChangeTimes->{{3.870660163496421*^9, 3.8706601709261785`*^9}},
+ CellLabel->
+  "Out[139]=",ExpressionUUID->"b40f1d94-1832-42ca-a322-b3814f534713"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["errorarray2"], "Input",
+ CellLabel->
+  "In[154]:=",ExpressionUUID->"9b1099f4-d042-422e-826f-8ace5127bcf0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2.141367159635521`", ",", "1.0490220192330377`", ",", 
+   "0.6917845949063711`", ",", "0.5153224798337236`", ",", 
+   "0.41033762683557623`", ",", "0.34078407208481326`", ",", 
+   "0.2913416890876823`", ",", "0.25440155761274935`", ",", 
+   "0.22575984253069206`", ",", "0.20290484229147454`", ",", 
+   "0.1842468637813554`", ",", "0.16874771529378546`", ",", 
+   "0.1554904615065688`", ",", "0.1451754294435368`", ",", 
+   "0.13232846570749643`", ",", "0.13322229131135394`", ",", 
+   "0.01719411627106986`", ",", "0.17194853801169585`", ",", 
+   "0.6871578947368422`", ",", "ComplexInfinity", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{3.870660348395869*^9},
+ CellLabel->
+  "Out[154]=",ExpressionUUID->"81295172-65d0-41f1-ae6a-bf5595cf43ee"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["errorarray2"], "Input",
+ CellLabel->
+  "In[167]:=",ExpressionUUID->"b4faec83-2ce3-48b5-b5ff-19369a8f790a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0.2913416890876823`", ",", "0.25440155761274935`", ",", 
+   "0.22575984253069206`", ",", "0.20290484229147454`", ",", 
+   "0.1842468637813554`", ",", "0.16874771529378546`", ",", 
+   "0.1554904615065688`", ",", "0.1451754294435368`", ",", 
+   "0.13232846570749643`", ",", "0.13322229131135394`", ",", 
+   "0.01719411627106986`", ",", "0.17194853801169585`", ",", 
+   "0.6871578947368422`", ",", "ComplexInfinity", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{3.8706603895177994`*^9},
+ CellLabel->
+  "Out[167]=",ExpressionUUID->"b14d5700-9073-4aa1-860d-380eea374c9a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    FractionBox[
+     SuperscriptBox["x", "19"], 
+     RowBox[{"x", "+", "5"}]], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8706604090853853`*^9, 3.870660413338419*^9}},
+ CellLabel->
+  "In[169]:=",ExpressionUUID->"5838b509-c98e-4009-8938-166fb975c4e3"],
+
+Cell[BoxData["0.0078125`"], "Output",
+ CellChangeTimes->{{3.8706604105754857`*^9, 3.8706604139549575`*^9}},
+ CellLabel->
+  "Out[169]=",ExpressionUUID->"569858ed-3acc-45e4-b8f8-f1baab9ca684"]
+}, Open  ]]
+},
+WindowSize->{958, 988},
+WindowMargins->{{-7, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (2019\:5e745\:670818\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 340, 9, 48, "Input",ExpressionUUID->"702c15b1-7798-402e-962a-2782dd6fd415"],
+Cell[923, 33, 356, 11, 52, "Output",ExpressionUUID->"e6350e30-67f4-4a64-838c-14b3998a854c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1316, 49, 976, 25, 64, "Input",ExpressionUUID->"c80df450-4923-453d-b5b5-c3b1d7bdcea2"],
+Cell[2295, 76, 19124, 331, 230, "Output",ExpressionUUID->"978408b7-568f-4225-b0ce-8050ee23ba9c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21456, 412, 4920, 126, 713, "Input",ExpressionUUID->"f6cb5eeb-f940-4f94-9a81-1cd87c3354b9"],
+Cell[26379, 540, 380, 9, 40, "Message",ExpressionUUID->"37bf14be-c722-4608-84d4-aaa0c0094b23"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26796, 554, 832, 15, 141, "Input",ExpressionUUID->"2bc6fc58-dfe0-4680-bb09-b8362d277960"],
+Cell[27631, 571, 2287, 52, 422, "Output",ExpressionUUID->"c0ed931c-f3d3-49a9-9313-6d135cbf105c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29955, 628, 2131, 60, 333, "Input",ExpressionUUID->"2aefbc77-b9d1-4d2b-9d52-e04050cfb84a"],
+Cell[32089, 690, 430, 10, 40, "Message",ExpressionUUID->"ad4a29bf-7ee2-4b47-8c1f-97039750ab7c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32556, 705, 402, 9, 45, "Input",ExpressionUUID->"ee4dd2ce-3d00-450d-abf3-4402bda1a1c5"],
+Cell[32961, 716, 1924, 49, 245, "Output",ExpressionUUID->"19406428-052a-4803-817b-3b141a4263c3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34922, 770, 426, 12, 64, "Input",ExpressionUUID->"c1904669-8d85-4d9a-88ae-42a694ea4a88"],
+Cell[35351, 784, 186, 3, 32, "Output",ExpressionUUID->"b40f1d94-1832-42ca-a322-b3814f534713"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35574, 792, 120, 2, 28, "Input",ExpressionUUID->"9b1099f4-d042-422e-826f-8ace5127bcf0"],
+Cell[35697, 796, 792, 15, 52, "Output",ExpressionUUID->"81295172-65d0-41f1-ae6a-bf5595cf43ee"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36526, 816, 120, 2, 28, "Input",ExpressionUUID->"b4faec83-2ce3-48b5-b5ff-19369a8f790a"],
+Cell[36649, 820, 677, 13, 52, "Output",ExpressionUUID->"b14d5700-9073-4aa1-860d-380eea374c9a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37363, 838, 403, 11, 64, "Input",ExpressionUUID->"5838b509-c98e-4009-8938-166fb975c4e3"],
+Cell[37769, 851, 190, 3, 64, "Output",ExpressionUUID->"569858ed-3acc-45e4-b8f8-f1baab9ca684"]
+}, Open  ]]
+}
+]
+*)
+
